@@ -1,0 +1,135 @@
+.form-container {
+  .center-hv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    // width: 50rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  
+  }
+
+  .sec-1 {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+
+
+  .sec-2 {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+
+  .avo {
+    font-size: 1.2rem;
+  }
+
+  .sec-5 {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+  }
+
+  .sec-5 .name {
+    font-family: "Great Vibes", cursive;
+    font-size: 1.5rem;
+  }
+
+  /* Style for the container */
+  .custom-file-input {
+    cursor: pointer;
+  }
+
+  h3 {
+    background-color: rgb(243, 240, 240);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    // color: white;
+    text-align: center;
+    padding: 8px;
+  }
+  .dark & h3{
+    background-color: rgb(60, 72, 113);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+    color:white;
+    text-align: center;
+    padding: 8px;
+  }
+
+  .form-group {
+    display: flex;
+    // flex-direction: row;
+    // align-items: center;
+    margin-bottom: 10px;
+  }
+
+  label {
+    // flex: 0 0 150px;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  textarea {
+    flex: 1;
+    padding: 10px;
+    // border: none;
+    // border-bottom: 1px dashed #999;
+   
+    width: 100%;
+    background-color: transparent;
+
+    &:focus{
+        outline: 1px solid #eee;
+         border-radius: 5px;
+        
+    }
+    .dark &:focus{
+        outline: 1px solid #2e4098;
+         border-radius: 5px;
+        
+    }
+  }
+
+  .activity input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: white !important;
+    padding: 0px 10px !important;
+  }
+
+
+
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  @media (max-width: 768px) {
+    .avo {
+      font-size: 1rem;
+    }
+
+    .sust {
+      font-size: 0.7rem;
+    }
+    .custom-file-input img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer components{
+    .custom-style-menu-a{
+        @apply hover:bg-[#3b3b5f] hover:text-white  dark:hover:text-white   dark:hover:bg-[#c0bdca20] 
+    }
+
+    .form-input{
+        @apply block text-[18px] px-[15px] pb-2.5 pt-3 w-full  text-gray-900 bg-transparent rounded-lg border border-slate-400 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 
+    }
+
+    .form-label{
+        @apply absolute  text-[18px] text-gray-600 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-[2px] left-[10px] z-10 origin-[0] bg-[#f6f7f8] dark:bg-[#182c49] px-2 peer-focus:px-2 peer-focus:text-blue-600 peer-focus:dark:text-blue-500         peer-placeholder-shown:scale-100 peer-placeholder-shown:-translate-y-1/2 peer-placeholder-shown:top-1/2 
+                peer-focus:top-[2px] peer-focus:scale-75 peer-focus:-translate-y-4 
+    }
+
+      .cardDesign{
+  @apply   rounded-md px-2 py-5 hover:bg-[#95efcafb]   bg-[#dee0f3]  
+  }
+
+  .form-container .form-group{
+    @apply  flex-col md:items-center  md:flex-row 
+  }
+  .form-container .form-group label{
+    @apply md:flex-[0_0_150px]
+  }
+  .form-container .form-group input{
+    @apply border border-[#eee] md:border-[#999]   md:border-dashed md:border-b
+     md:border-t-0 md:border-l-0 md:border-r-0
+  }
+
+  .faq-container{
+    @apply collapse collapse-arrow rounded-lg border-zinc-300 border dark:border-[#22176b]  m-auto
+  }
+  .faq-wrapper{
+    @apply  sm:text-xl border overflow-hidden   font-bold dark:bg-[#182c49]  border-b dark:border-none  pb-0 bg-[#ebeeffa1] dark:text-white
+  }
+  .faq-collapse-container {
+    @apply  overflow-hidden box-border  bg-[#fdfdfd] dark:text-[#b4bcc8] dark:bg-[#ebeeff0f] pb-0
+  }
+  .faq-collapse-container p{
+    @apply  pt-3 text-[16px]
+  }
+  .kin{
+    @apply text-[#d00b11] dark:text-[#d00b11] font-black font-['Arial_Black']
+  }
+
+}
+
+
+/* dark theme : #0a1929 */ 
